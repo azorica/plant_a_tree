@@ -2,6 +2,6 @@
 </script>
 <template>
   <header>
-    Header
+    Plant A tree app
   </header>
 </template>

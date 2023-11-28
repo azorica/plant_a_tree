@@ -2,6 +2,6 @@
 </script>
 <template>
   <footer>
-    Footer
+    Copyright - Plant A tree app
   </footer> 
 </template>

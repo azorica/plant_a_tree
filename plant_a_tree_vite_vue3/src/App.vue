@@ -10,22 +10,25 @@ import Home from './components/Home.vue';
   <Footer/>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
   #plant-a-tree-app {
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    flex: 1;
 
     header {
-      background: red;
+      background: #bb9f9fc8;
     }
 
-    home {
+    .home {
+      flex: 1;
       background: white;
     }
 
     footer {
-      background: blue;
+      flex: none;
+      background: #cccccc;
     }
   }
 </style>

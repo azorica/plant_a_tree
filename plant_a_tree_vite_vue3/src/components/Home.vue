@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-  <main>
+  <main class="home">
     Home
   </main>
 </template>
