@@ -1,34 +1,28 @@
 <script setup>
-import Header from './components/Header.vue';
-import Footer from './components/Footer.vue';
-import Home from './components/Home.vue';
+import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
   <Header/>
-  <Home/>
+  <main>
+    <router-view></router-view>
+  </main>
   <Footer/>
 </template>
 
 <style lang="scss">
+  @import './assets/sass/config';
+
   #plant-a-tree-app {
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
 
-    header {
-      background: #bb9f9fc8;
-    }
-
-    .home {
+    main {
       flex: 1;
       background: white;
-    }
-
-    footer {
-      flex: none;
-      background: #cccccc;
     }
   }
 </style>

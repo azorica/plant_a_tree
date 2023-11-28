@@ -1,0 +1,12 @@
+/**
+ * Set up a decent box model and font-size on the root element
+ * Setting font-size: 62.5% will make 1rem = 10px because default font-size of the browser is 16px.
+ */
+ html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.4rem;
+}

@@ -1,8 +1,8 @@
-import './style.css';
 import App from './App.vue';
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from './components/Home.vue';
+import Home from '@/components/Home.vue';
+import Mission from '@/components/Mission.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -11,6 +11,11 @@ const router = createRouter({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/mission',
+      name: 'Our Mission',
+      component: Mission
     }
   ]
 });
