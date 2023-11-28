@@ -19,7 +19,7 @@
 </template>
 
 <style lang="scss">
-  .header {
+  header {
     $forest-color: #228B22;
     $deep-oak: #42280E;
 
@@ -27,12 +27,11 @@
     align-items: center;
     width: 100%;
     min-height: 5rem;
-    background-color: $forest-color;
-    border-bottom: 0.5rem solid $deep-oak;
-    border-radius: 0 0 30% 0;
+    background-color: white;
+    border-bottom: 0.1rem solid $forest-color;
 
     .logo {
-      padding: 2rem;
+      padding: 2rem 2rem 1rem;
 
       img {
         height: 8rem;
@@ -49,7 +48,7 @@
           padding: 1rem 1.5rem;
 
           a {
-            color: white;
+            color: $deep-oak;
             font-size: 2rem;
           }
         }

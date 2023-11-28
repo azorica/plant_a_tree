@@ -7,6 +7,6 @@
 </template>
 <style>
 .mission {
-  background-color: aquamarine;
+  
 }
 </style>
