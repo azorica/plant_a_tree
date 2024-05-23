@@ -1,8 +1,11 @@
 <script setup>
+  import { ref } from 'vue';
+
+  const currentYear = ref(new Date().getFullYear());
 </script>
 <template>
   <footer>
-    Copyright - Plant A tree app
+    <span>Copyright - Plant A tree app {{ currentYear }}</span>
   </footer> 
 </template>
 
