@@ -11,8 +11,12 @@ app.use(cors());
 app.use(express.json());
 
 // Example endpoint
-app.get('/api/hello', (req, res) => {
-  res.json({ message: 'Hello, world!' });
+app.get('/api/home', (req, res) => {
+  res.json({ message: 'This is a homepage' });
+});
+
+app.get('/api/mission', (req, res) => {
+  res.json({ message: 'This is our mission' });
 });
 
 // Start the server

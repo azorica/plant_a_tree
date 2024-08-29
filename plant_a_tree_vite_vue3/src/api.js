@@ -8,7 +8,11 @@ const apiClient = axios.create({
 });
 
 export default {
-  getHello() {
-    return apiClient.get('/hello');
-  }
+  getHome() {
+    return apiClient.get('/home');
+  },
+
+  getMission() {
+    return apiClient.get('/mission');
+  }  
 };

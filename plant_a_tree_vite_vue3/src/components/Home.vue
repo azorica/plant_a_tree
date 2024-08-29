@@ -1,9 +1,3 @@
-<template>
-  <div>
-    <h1>{{ message }}</h1>
-  </div>
-</template>
-
 <script>
 import api from '@/api';
 
@@ -15,7 +9,7 @@ export default {
   },
   async created() {
     try {
-      const response = await api.getHello();
+      const response = await api.getHome();
       this.message = response.data.message;
     } catch (error) {
       console.error('Error fetching message:', error);
@@ -23,3 +17,9 @@ export default {
   }
 };
 </script>
+
+<template>
+  <div>
+    <h1>{{ message }}</h1>
+  </div>
+</template>
