@@ -12,7 +12,7 @@ import Footer from '@/components/Footer.vue';
 </template>
 
 <style lang="scss">
-  @import './assets/sass/config';
+  @use './assets/sass/config';
 
   #plant-a-tree-app {
     height: 100vh;
