@@ -24,6 +24,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.27.0",
     "@studion/prettier-config": "^0.1.0",
+    "@types/axios": "^0.9.36",
     "@vitejs/plugin-vue": "^5.2.3",
     "concurrently": "^9.1.2",
     "eslint": "^9.23.0",

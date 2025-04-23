@@ -1,11 +1,29 @@
-<script setup>
-import { onMounted, ref } from 'vue';
+<script setup lang="ts">
+// Home.vue
+import { computed, onMounted, ref, reactive } from 'vue';
 import api from '@/api';
+import type { Ref } from 'vue';
 import { useRouter } from 'vue-router';
 
+interface Props {
+  message: string;
+};
+
+const { message = ref('Loading...') } = defineProps<Props>();
+
 const router = useRouter();
-const message = ref('Loading...');
-const show = ref(false);
+
+const show: Ref<boolean> = ref(false);
+
+const newTestObject = reactive({
+  name: 'test',
+  age: 18,
+  address: {
+    city: 'New York',
+    state: 'NY'
+  }
+});  
+
 const toggleShow = () => {
   show.value = !show.value;
 };
@@ -27,6 +45,12 @@ const onButtonClick = () => {
   console.log('Button clicked!');
   toggleShow();
 };
+
+const A0 = ref(45)
+const A1 = ref(55)
+const A2 = computed(() => {
+  return A0.value + A1.value
+})
   
 
 </script>
@@ -34,7 +58,7 @@ const onButtonClick = () => {
 <template>
   <div class="home">
     <h1>Home</h1>
-    <h2>{{ message }}</h2>
+    <h2>{{ message }} {{ A2 }}</h2>
     <button @click="onButtonClick">
       Click me
     </button>
